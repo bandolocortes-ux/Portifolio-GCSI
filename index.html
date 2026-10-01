@@ -14,6 +14,22 @@
   </head>
   <body>
     <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#collection-title" aria-label="Formas Raras, início">
+          <img src="assets/logo-formas-raras.svg" alt="" width="36" height="36" />
+          <span>FORMAS<br /><strong>RARAS</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Navegação principal">
+          <a href="#collection-title">Manifesto</a>
+          <a href="#card-list">Coleção <span>06</span></a>
+          <a href="#about">Sobre</a>
+        </nav>
+        <a class="header-cta" href="#card-list">Explorar edição <span aria-hidden="true">↗</span></a>
+      </header>
+
       <section class="collection" aria-labelledby="collection-title">
         <div class="collection__intro">
           <p class="eyebrow"><span class="eyebrow__dot"></span> EDIÇÃO 001 <span class="eyebrow__divider">/</span> ARTE DIGITAL</p>
@@ -29,7 +45,7 @@
 
         <div class="card-list" id="card-list" aria-live="polite"></div>
 
-        <footer class="collection-footer">
+        <footer class="collection-footer" id="about">
           <span>FORMAS RARAS <span class="footer__slash">/</span> 2026</span>
           <span>ARTE QUE NÃO FICA PARADA.</span>
         </footer>
