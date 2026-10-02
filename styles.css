@@ -1,0 +1,230 @@
+:root {
+  color-scheme: dark;
+  font-family: "Outfit", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --canvas: #0d192b;
+  --surface: #152a43;
+  --text: #f2f5f9;
+  --muted: #91a9c4;
+  --accent: #00fff7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background-color: var(--canvas);
+  background-image:
+    radial-gradient(ellipse at 50% 42%, rgb(27 62 85 / 38%), transparent 54%),
+    linear-gradient(135deg, transparent 49.9%, rgb(255 255 255 / 2%) 50%, transparent 50.1%);
+  background-size: auto, 56px 56px;
+}
+
+.stage {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 32px 24px;
+}
+
+.nft-card {
+  width: min(100%, 350px);
+  padding: 24px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid rgb(137 190 211 / 10%);
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgb(0 0 0 / 26%);
+  animation: card-arrive 650ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  transition:
+    transform 260ms ease,
+    border-color 260ms ease,
+    box-shadow 260ms ease;
+}
+
+.artwork {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #153c50;
+  border-radius: 8px;
+}
+
+.artwork__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.artwork__overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgb(0 255 247 / 50%);
+  opacity: 0;
+  transition: opacity 260ms ease;
+}
+
+.artwork__overlay svg {
+  width: 48px;
+  fill: #fff;
+  transform: translateY(6px) scale(0.9);
+  transition: transform 260ms ease;
+}
+
+.nft-card__content h1 {
+  width: fit-content;
+  margin: 21px 0 12px;
+  color: var(--text);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+  transition: color 220ms ease;
+}
+
+.description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 20px 0 18px;
+  font-size: 15px;
+}
+
+.details p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.price {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.price svg {
+  width: 11px;
+  fill: currentColor;
+}
+
+.time-left {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.time-left svg {
+  width: 16px;
+  fill: currentColor;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 16px;
+  border-top: 1px solid rgb(145 169 196 / 24%);
+}
+
+.creator__avatar {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  border: 1px solid #d9e5f2;
+  border-radius: 50%;
+}
+
+.creator p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.creator span {
+  margin-left: 3px;
+  color: var(--text);
+  transition: color 220ms ease;
+}
+
+@media (hover: hover) {
+  .nft-card:hover {
+    transform: translateY(-7px);
+    border-color: rgb(0 255 247 / 28%);
+    box-shadow: 0 32px 76px rgb(0 0 0 / 36%), 0 0 28px rgb(0 255 247 / 8%);
+  }
+
+  .nft-card:hover .artwork__image {
+    transform: scale(1.06);
+  }
+
+  .nft-card:hover .artwork__overlay {
+    opacity: 1;
+  }
+
+  .nft-card:hover .artwork__overlay svg {
+    transform: translateY(0) scale(1);
+  }
+
+  .nft-card:hover h1,
+  .nft-card:hover .creator span {
+    color: var(--accent);
+  }
+}
+
+@keyframes card-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 380px) {
+  .stage {
+    padding: 24px;
+  }
+
+  .nft-card {
+    padding: 20px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+
+  .details {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
