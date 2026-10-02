@@ -10,29 +10,45 @@ const artworks = [
 const favoriteIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 4.2-8.8 10.1-8.8 10.1S3.2 12.9 3.2 8.7A4.2 4.2 0 0 1 12 6.5a4.2 4.2 0 0 1 8.8 2.2Z" /></svg>';
 
 document.querySelector("#card-list").innerHTML = artworks.map((artwork, index) => `
-  <article class="nft-card animate__animated animate__fadeInUp" style="--delay: ${index * 90}ms">
-    <div class="nft-card__visual">
-      <img class="nft-card__image" src="${artwork.image}" alt="${artwork.imageAlt}" loading="${index < 3 ? "eager" : "lazy"}" />
-      <span class="nft-card__index">NO. ${String(index + 1).padStart(2, "0")}</span>
-      <button class="favorite" type="button" aria-label="Favoritar ${artwork.title}" aria-pressed="false">${favoriteIcon}</button>
-    </div>
-    <div class="nft-card__details">
-      <div class="nft-card__heading"><h3>${artwork.title}</h3><span class="nft-card__edition">${artwork.edition}</span></div>
-      <div class="nft-card__creator">
-        <span class="creator"><span class="creator__avatar" style="--avatar: ${artwork.color}">${artwork.initials}</span><span class="creator__name">${artwork.artist}</span></span>
-        <span class="price"><span>ETH</span> ${artwork.price}</span>
+  <article class="nft-card">
+    <div class="nft-card__entrance animate__animated animate__fadeInUp" style="--delay: ${index * 90}ms">
+      <div class="nft-card__visual">
+        <img class="nft-card__image" src="${artwork.image}" alt="${artwork.imageAlt}" loading="${index < 3 ? "eager" : "lazy"}" />
+        <span class="nft-card__index">NO. ${String(index + 1).padStart(2, "0")}</span>
+        <button class="favorite" type="button" aria-label="Favoritar ${artwork.title}" aria-pressed="false">${favoriteIcon}</button>
+      </div>
+      <div class="nft-card__details">
+        <div class="nft-card__heading"><h3>${artwork.title}</h3><span class="nft-card__edition">${artwork.edition}</span></div>
+        <div class="nft-card__creator">
+          <span class="creator"><span class="creator__avatar" style="--avatar: ${artwork.color}">${artwork.initials}</span><span class="creator__name">${artwork.artist}</span></span>
+          <span class="price"><span>ETH</span> ${artwork.price}</span>
+        </div>
       </div>
     </div>
   </article>
 `).join("");
 
-document.querySelector("#card-list").addEventListener("click", (event) => {
-  const button = event.target.closest(".favorite");
-  if (!button) return;
+const cardList = document.querySelector("#card-list");
 
-  const isFavorite = button.getAttribute("aria-pressed") === "true";
-  button.setAttribute("aria-pressed", String(!isFavorite));
-  button.setAttribute("aria-label", `${isFavorite ? "Favoritar" : "Remover dos favoritos"} ${button.closest(".nft-card").querySelector("h3").textContent}`);
+cardList.addEventListener("click", (event) => {
+  const button = event.target.closest(".favorite");
+  if (button) {
+    const isFavorite = button.getAttribute("aria-pressed") === "true";
+    button.setAttribute("aria-pressed", String(!isFavorite));
+    button.setAttribute("aria-label", `${isFavorite ? "Favoritar" : "Remover dos favoritos"} ${button.closest(".nft-card").querySelector("h3").textContent}`);
+    return;
+  }
+
+  if (window.matchMedia("(hover: hover)").matches) return;
+
+  const card = event.target.closest(".nft-card");
+  if (!card) return;
+
+  const shouldExpand = !card.classList.contains("is-expanded");
+  cardList.querySelectorAll(".nft-card.is-expanded").forEach((expandedCard) => {
+    expandedCard.classList.remove("is-expanded");
+  });
+  card.classList.toggle("is-expanded", shouldExpand);
 });
 
 const menuToggle = document.querySelector(".menu-toggle");

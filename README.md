@@ -1,21 +1,33 @@
 # Formas Raras
 
-Galeria responsiva de colecionáveis NFT e arte digital. O projeto reúne seis peças originais em uma interface inspirada no desafio [NFT Preview Card Component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
+A responsive gallery of NFT collectibles and digital art. The project features six original pieces in an interface inspired by Frontend Mentor's [NFT Preview Card Component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) challenge.
 
-## Acesso
+## Links
 
-- **Site:** [bandolocortes-ux.github.io/Portifolio-GCSI](https://bandolocortes-ux.github.io/Portifolio-GCSI/)
-- **Repositório:** [github.com/bandolocortes-ux/Portifolio-GCSI](https://github.com/bandolocortes-ux/Portifolio-GCSI)
+- **Live site:** [bandolocortes-ux.github.io/Portifolio-GCSI](https://bandolocortes-ux.github.io/Portifolio-GCSI/)
+- **Repository:** [github.com/bandolocortes-ux/Portifolio-GCSI](https://github.com/bandolocortes-ux/Portifolio-GCSI)
 
-## Tecnologias
+## Screenshots
 
-- HTML5, CSS3 e JavaScript sem framework
-- [Animate.css](https://animate.style/) para a entrada animada dos cards
-- GitHub Pages para hospedagem
+![Desktop homepage showing the collection introduction and featured artworks](assets/prints%20funcionamento/image%20copy.png)
 
-## Coleção
+![Desktop gallery showing the full artwork collection](assets/prints%20funcionamento/image.png)
 
-As artes vetoriais foram criadas para este projeto e acompanham cards com nome, artista, edição e valor fictício em ETH. Os cards têm movimento no hover e controles de favoritos; o layout se adapta a celular, tablet e desktop.
+![Mobile homepage showing the responsive navigation and collection introduction](assets/prints%20funcionamento/image%20copy%202.png)
+
+![Mobile gallery showing the first artworks and their details](assets/prints%20funcionamento/image%20copy%203.png)
+
+![Mobile gallery showing the remaining artworks and page footer](assets/prints%20funcionamento/image%20copy%204.png)
+
+## Technologies
+
+- HTML5, CSS3, and vanilla JavaScript
+- [Animate.css](https://animate.style/) for card entrance animations
+- GitHub Pages for hosting
+
+## Collection
+
+The vector artworks were created for this project. Each card displays the artwork title, artist, edition, and a fictional ETH price. Cards respond to hover and touch, include favorite controls, and adapt to mobile, tablet, and desktop screens.
 
 | Sol de bolso | Jardim elétrico | Maré lunar |
 |:---:|:---:|:---:|
@@ -25,11 +37,11 @@ As artes vetoriais foram criadas para este projeto e acompanham cards com nome, 
 |:---:|:---:|:---:|
 | ![Quase domingo](assets/artwork/quase-domingo.svg) | ![Ponto de fuga](assets/artwork/ponto-de-fuga.svg) | ![Nuvem baixa](assets/artwork/nuvem-baixa.svg) |
 
-## Referências visuais
+## Visual References
 
-- [OpenSea](https://opensea.io/) e [Foundation](https://foundation.app/) como referências de galerias de colecionáveis digitais
-- [Frontend Mentor — NFT Preview Card Component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) como ponto de partida do desafio
+- [OpenSea](https://opensea.io/) and [Foundation](https://foundation.app/) as digital collectible gallery references
+- [Frontend Mentor — NFT Preview Card Component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) as the original challenge
 
-## Autoria
+## Author
 
-Desenvolvido por [@bandolocortes-ux](https://github.com/bandolocortes-ux).
+Created by [@bandolocortes-ux](https://github.com/bandolocortes-ux).
