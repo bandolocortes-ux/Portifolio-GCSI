@@ -1,10 +1,10 @@
 const artworks = [
-  { title: "Sol de bolso", artist: "Lia Nascimento", initials: "LN", price: "0.84", edition: "01/12", image: "assets/artwork/sol-de-bolso.svg", color: "#f6c6a9", imageAlt: "Composição abstrata com formas solares em coral e amarelo" },
-  { title: "Jardim elétrico", artist: "Caio Mori", initials: "CM", price: "1.20", edition: "03/08", image: "assets/artwork/jardim-eletrico.svg", color: "#d3e89d", imageAlt: "Flores geométricas coloridas sobre fundo verde" },
-  { title: "Maré lunar", artist: "Nina Okafor", initials: "NO", price: "0.62", edition: "02/16", image: "assets/artwork/mare-lunar.svg", color: "#c5d8f3", imageAlt: "Paisagem abstrata azul com uma lua em forma de arco" },
-  { title: "Quase domingo", artist: "Davi Luz", initials: "DL", price: "2.05", edition: "01/05", image: "assets/artwork/quase-domingo.svg", color: "#f0d487", imageAlt: "Natureza morta digital com formas laranja e amarelas" },
-  { title: "Ponto de fuga", artist: "Bia Campos", initials: "BC", price: "0.95", edition: "04/10", image: "assets/artwork/ponto-de-fuga.svg", color: "#dfc5ec", imageAlt: "Formas geométricas em perspectiva sobre fundo lilás" },
-  { title: "Nuvem baixa", artist: "Rui Tanaka", initials: "RT", price: "1.48", edition: "01/07", image: "assets/artwork/nuvem-baixa.svg", color: "#c1e2dc", imageAlt: "Escultura digital abstrata em tons de verde e azul" },
+  { title: "Auto falante", artist: "Lia Nascimento", initials: "LN", price: "0.84", edition: "01/12", image: "assets/artwork/imagens/imagem6.jpeg", color: "#f6c6a9", imageAlt: "Computador de mesa preto com logotipo da Apple" },
+  { title: "Câmera", artist: "Caio Mori", initials: "CM", price: "1.20", edition: "03/08", image: "assets/artwork/imagens/imagem1.jpeg", color: "#d3e89d", imageAlt: "Câmera fotográfica preta sobre fundo branco" },
+  { title: "Fone de ouvido", artist: "Nina Okafor", initials: "NO", price: "0.62", edition: "02/16", image: "assets/artwork/imagens/imagem2.jpeg", color: "#c5d8f3", imageAlt: "Fone sem fio branco com estojo de carregamento" },
+  { title: "Smart Speaker & Smartphone", artist: "Davi Luz", initials: "DL", price: "2.05", edition: "01/05", image: "assets/artwork/imagens/imagem5.jpeg", color: "#f0d487", imageAlt: "Dois celulares e um fone de ouvido branco" },
+  { title: "Relógio digital", artist: "Bia Campos", initials: "BC", price: "0.95", edition: "04/10", image: "assets/artwork/imagens/imagem4.jpeg", color: "#dfc5ec", imageAlt: "Relógio inteligente preto com mostrador analógico" },
+  { title: "Smartphone", artist: "Rui Tanaka", initials: "RT", price: "1.48", edition: "01/07", image: "assets/artwork/imagens/imagem3.jpeg", color: "#c1e2dc", imageAlt: "Smartphone preto com tela azul" },
 ];
 
 const favoriteIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 4.2-8.8 10.1-8.8 10.1S3.2 12.9 3.2 8.7A4.2 4.2 0 0 1 12 6.5a4.2 4.2 0 0 1 8.8 2.2Z" /></svg>';

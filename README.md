@@ -31,11 +31,11 @@ The vector artworks were created for this project. Each card displays the artwor
 
 | Sol de bolso | Jardim elétrico | Maré lunar |
 |:---:|:---:|:---:|
-| ![Sol de bolso](assets/artwork/sol-de-bolso.svg) | ![Jardim elétrico](assets/artwork/jardim-eletrico.svg) | ![Maré lunar](assets/artwork/mare-lunar.svg) |
+| ![Sol de bolso](assets/artwork/imagens/imagem6.jpeg) | ![Jardim elétrico](assets/artwork/imagens/imagem1.jpeg) | ![Maré lunar](assets/artwork/imagens/imagem2.jpeg) |
 
 | Quase domingo | Ponto de fuga | Nuvem baixa |
 |:---:|:---:|:---:|
-| ![Quase domingo](assets/artwork/quase-domingo.svg) | ![Ponto de fuga](assets/artwork/ponto-de-fuga.svg) | ![Nuvem baixa](assets/artwork/nuvem-baixa.svg) |
+| ![Quase domingo](assets/artwork/imagens/imagem5.jpeg) | ![Ponto de fuga](assets/artwork/imagens/imagem4.jpeg) | ![Nuvem baixa](assets/artwork/imagens/imagem3.jpeg) |
 
 ## Visual References
 
