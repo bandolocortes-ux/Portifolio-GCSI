@@ -5,6 +5,12 @@ const artworks = [
   { title: "Smart Speaker & Smartphone", artist: "Davi Luz", initials: "DL", price: "2.05", edition: "01/05", image: "assets/artwork/imagens/imagem5.jpeg", color: "#f0d487", imageAlt: "Dois celulares e um fone de ouvido branco" },
   { title: "Relógio digital", artist: "Bia Campos", initials: "BC", price: "0.95", edition: "04/10", image: "assets/artwork/imagens/imagem4.jpeg", color: "#dfc5ec", imageAlt: "Relógio inteligente preto com mostrador analógico" },
   { title: "Smartphone", artist: "Rui Tanaka", initials: "RT", price: "1.48", edition: "01/07", image: "assets/artwork/imagens/imagem3.jpeg", color: "#c1e2dc", imageAlt: "Smartphone preto com tela azul" },
+  { title: "Headset de realidade virtual", artist: "Lia Nascimento", initials: "LN", price: "1.12", edition: "01/08", image: "imagens/WhatsApp Image 2026-10-05 at 13.17.50.jpeg", color: "#d8c9bb", imageAlt: "Headset preto de realidade virtual visto de frente" },
+  { title: "Smartphone de tela curva", artist: "Caio Mori", initials: "CM", price: "1.36", edition: "02/10", image: "imagens/WhatsApp Image 2026-10-05 at 13.17.50 (1).jpeg", color: "#c5d8f3", imageAlt: "Smartphone preto visto pela parte traseira" },
+  { title: "Drone aéreo", artist: "Nina Okafor", initials: "NO", price: "1.74", edition: "01/06", image: "imagens/WhatsApp Image 2026-10-05 at 13.17.50 (2).jpeg", color: "#d3e89d", imageAlt: "Drone branco com quatro hélices" },
+  { title: "Headset imersivo", artist: "Davi Luz", initials: "DL", price: "1.28", edition: "03/08", image: "imagens/WhatsApp Image 2026-10-05 at 13.17.50 (3).jpeg", color: "#f0d487", imageAlt: "Headset preto de realidade virtual com detalhes azuis" },
+  { title: "Smartphone dobrável", artist: "Bia Campos", initials: "BC", price: "1.92", edition: "01/05", image: "imagens/WhatsApp Image 2026-10-05 at 13.17.50 (4).jpeg", color: "#dfc5ec", imageAlt: "Smartphone dobrável com duas telas" },
+  { title: "Notebook ultrafino", artist: "Rui Tanaka", initials: "RT", price: "2.10", edition: "02/07", image: "imagens/WhatsApp Image 2026-10-05 at 13.17.50 (5).jpeg", color: "#c1e2dc", imageAlt: "Notebook fino preto fechado" },
 ];
 
 const favoriteIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 4.2-8.8 10.1-8.8 10.1S3.2 12.9 3.2 8.7A4.2 4.2 0 0 1 12 6.5a4.2 4.2 0 0 1 8.8 2.2Z" /></svg>';
